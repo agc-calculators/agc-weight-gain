@@ -1,0 +1,1 @@
+// AgcWeightGain: CommonJS Main

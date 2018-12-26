@@ -1,0 +1,105 @@
+{
+  "components": [
+    {
+      "tag": "agc-weight-gain",
+      "dependencies": [],
+      "componentClass": "AgcWeightGain",
+      "componentPath": "components/agc-weight-gain/agc-weight-gain.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "mode",
+          "type": "String",
+          "attr": "mode"
+        },
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        },
+        {
+          "name": "tract",
+          "type": "String",
+          "attr": "tract"
+        }
+      ],
+      "states": [
+        {
+          "name": "cache"
+        },
+        {
+          "name": "currentStep"
+        },
+        {
+          "name": "results"
+        },
+        {
+          "name": "submitted"
+        }
+      ],
+      "events": [
+        {
+          "event": "agcCalculated"
+        },
+        {
+          "event": "agcStepChanged"
+        }
+      ]
+    },
+    {
+      "tag": "agc-weight-gain-progress",
+      "dependencies": [],
+      "componentClass": "AgcWeightGainProgress",
+      "componentPath": "components/agc-weight-gain-progress/agc-weight-gain-progress.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "currentStep"
+        }
+      ]
+    },
+    {
+      "tag": "agc-weight-gain-results",
+      "dependencies": [],
+      "componentClass": "AgcWeightGainResults",
+      "componentPath": "components/agc-weight-gain-results/agc-weight-gain-results.js",
+      "styles": {},
+      "props": [
+        {
+          "name": "socket",
+          "type": "String",
+          "attr": "socket"
+        }
+      ],
+      "states": [
+        {
+          "name": "data"
+        },
+        {
+          "name": "ready"
+        }
+      ]
+    },
+    {
+      "tag": "agc-weight-gain-results-placeholder",
+      "dependencies": [],
+      "componentClass": "AgcWeightGainResultsPlaceholder",
+      "componentPath": "components/agc-weight-gain-results-placeholder/agc-weight-gain-results-placeholder.js",
+      "styles": {}
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
